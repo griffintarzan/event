@@ -195,10 +195,24 @@
         if (SCREEN_HEIGHT != window.innerHeight) {
             canvas.height = SCREEN_HEIGHT = window.innerHeight;
         }
+						// create 2nd canvas
+				var canvas2 = document.createElement('canvas'),
+				    context2 = canvas2.getContext('2d');
 
-        // clear canvas
-        context.fillStyle = "rgba(0, 0, 0, 0)";
-        context.fillRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+				canvas2.width = canvas.width;
+				canvas2.height = canvas.height;
+
+				// reduce alpha of second canvas
+				context2.globalAlpha = 0.95;
+				// produce faded copy of current canvas
+				context2.clearRect(0, 0, canvas2.width, canvas2.height);
+				context2.drawImage(canvas, 0, 0);
+
+				// redraw faded copy on original canvas
+				context.clearRect(0, 0, canvas.width, canvas.height);
+				context.drawImage(canvas2, 0, 0);
+
+
 
         var existingRockets = [];
 
