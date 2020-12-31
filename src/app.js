@@ -12,7 +12,7 @@ const hour = minute * 60;
 const day = hour * 24;
 
 // set the exactly date & times where to subtract current times.
-let userDate = new Date().getTime();
+let userDate = new Date('January 1, 2021 00:00:00').getTime();
 
 let calculateDate = setInterval(intervalImplementation, second);
 
