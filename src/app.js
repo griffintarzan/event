@@ -53,7 +53,7 @@ let setAllCountDownZero = value => {
 
 // when time become less than 0 it will automatically generate button
 let countEnded = () => {
-  let nextURL = '../wish-card/index.html';
+  let nextURL = 'https://griffintarzan.github.io/event/wish-card/index.html';
   let generatedBtn = `<button class="btn-primary btn-lg">
         <a href="${nextURL}" class="textOnColor">Next</a>
         </button>`;
