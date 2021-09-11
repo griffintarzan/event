@@ -1,6 +1,9 @@
-# Special Event
+# 2021 New Year Countdown
 
-A short project of countdown clock && automatically button generate
+A website that with a countdown clock to New Year 2021.
+This was a short project to celebrate the new year with my friends, who were all seniors going to graduate highschool this year!
 
-[Live Demo](https://golamrabbiazad.github.io/event/)
+Clock Countdown from https://github.com/golamrabbiazad/event
+
+How the website actually looks --> [Website](https://griffintarzan.github.io/event)
 
